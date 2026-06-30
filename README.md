@@ -134,23 +134,45 @@ The project estimates that reducing churn by only **3%** could protect approxima
 
 # Repository Structure
 
-```
+```text
 customer-retention-revenue-assurance-audit/
-
-│
-
 ├── README.md
-
-├── Executive Case Study.pdf
-
-├── Tableau Dashboard
-
-├── SQL Scripts
-
-├── Dataset
-
-└── Supporting Assets
+├── Case_Study_01_Customer_Churn_Analysis.pdf
+├── MANIFEST.json
+├── data/
+│   ├── raw/
+│   │   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
+│   └── processed/
+│       └── telco_customer_churn_clean.csv
+├── docs/
+│   ├── DATA_PACKAGE_README.md
+│   ├── CLEANING_DOCUMENTATION.md
+│   ├── QA_RECONCILIATION.md
+│   └── data_dictionary.csv
+└── scripts/
+    └── build_clean_dataset.py
 ```
+# Data and Documentation
+
+- [Source dataset](data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv)
+- [Analysis-ready cleaned dataset](data/processed/telco_customer_churn_clean.csv)
+- [Data dictionary](docs/data_dictionary.csv)
+- [Data cleaning documentation](docs/CLEANING_DOCUMENTATION.md)
+- [QA and KPI reconciliation](docs/QA_RECONCILIATION.md)
+- [Dataset package overview](docs/DATA_PACKAGE_README.md)
+- [Dataset build script](scripts/build_clean_dataset.py)
+- [Dataset manifest](MANIFEST.json)
+
+# Reproducibility
+
+The cleaned dataset can be rebuilt from the original source file using Python:
+
+```bash
+python scripts/build_clean_dataset.py \
+  --input data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv \
+  --output data/processed/telco_customer_churn_clean.csv
+```
+The build script validates the source schema, customer ID uniqueness, missing-value treatment, analytical fields and the principal KPIs used in the case study.
 
 ---
 
