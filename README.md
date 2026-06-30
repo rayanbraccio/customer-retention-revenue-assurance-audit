@@ -149,8 +149,14 @@ customer-retention-revenue-assurance-audit/
 │   ├── CLEANING_DOCUMENTATION.md
 │   ├── QA_RECONCILIATION.md
 │   └── data_dictionary.csv
-└── scripts/
-    └── build_clean_dataset.py
+├── scripts/
+│   └── build_clean_dataset.py
+└── sql/
+    ├── README.md
+    ├── 01_data_quality_validation.sql
+    ├── 02_executive_kpis.sql
+    ├── 03_churn_segmentation.sql
+    └── 04_priority_segment_and_revenue.sql
 ```
 # Data and Documentation
 
@@ -161,6 +167,7 @@ customer-retention-revenue-assurance-audit/
 - [QA and KPI reconciliation](docs/QA_RECONCILIATION.md)
 - [Dataset package overview](docs/DATA_PACKAGE_README.md)
 - [Dataset build script](scripts/build_clean_dataset.py)
+- [Verified SQL analysis package](sql/README.md)
 - [Dataset manifest](MANIFEST.json)
 
 # Reproducibility
