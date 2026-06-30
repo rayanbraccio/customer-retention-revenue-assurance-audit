@@ -1,0 +1,50 @@
+{
+  "package": "customer_retention_clean_dataset_bundle",
+  "dataset": {
+    "rows": 7043,
+    "source_columns": 21,
+    "engineered_columns": 12,
+    "output_columns": 33,
+    "primary_key": "customerID",
+    "duplicate_primary_keys": 0,
+    "blank_total_charges_source": 11,
+    "clean_total_charges_coverage_pct": 100.0
+  },
+  "reconciliation": {
+    "churned_customers": 1869,
+    "churn_rate_pct": 26.54,
+    "gross_mrr": 456116.6,
+    "churned_account_mrr": 139130.85,
+    "annualized_exposure": 1669570.2,
+    "priority_segment_customers": 1138,
+    "priority_segment_churned": 716,
+    "priority_segment_churn_rate_pct": 62.92,
+    "priority_segment_churned_account_mrr": 61358.05
+  },
+  "files": {
+    "data/processed/telco_customer_churn_clean.csv": {
+      "bytes": 1236721,
+      "sha256": "85955d2f659d789f24998af58cf01cdfbab64d8014164a577a27b56f1df58603"
+    },
+    "docs/data_dictionary.csv": {
+      "bytes": 5801,
+      "sha256": "7ab1f7f5498b351232c2d40246472128afbd1a7971b2d9fbfc5f10e3cfccda71"
+    },
+    "docs/CLEANING_DOCUMENTATION.md": {
+      "bytes": 4790,
+      "sha256": "edb7c4ddfe784f5f6118461acc6efcf47de3ebe9f7d71d5cb8fa6ba88c24691b"
+    },
+    "docs/QA_RECONCILIATION.md": {
+      "bytes": 2850,
+      "sha256": "62b25b9def241cc25e9a17e175b445b5f4b03b573d5ebf6fe16c6d46e51734bc"
+    },
+    "README.md": {
+      "bytes": 769,
+      "sha256": "376269a5fc9d7fcedae9bc79734d0b8dbdfd1fe7ef5d4c56bd5b0c898ae2e172"
+    },
+    "scripts/build_clean_dataset.py": {
+      "bytes": 7641,
+      "sha256": "c9d7ca1208e848818187e43c684ad10e2d98cad667add7cae50b8cf79a284e78"
+    }
+  }
+}
