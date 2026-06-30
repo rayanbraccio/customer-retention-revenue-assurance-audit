@@ -40,6 +40,16 @@ This project answers five key business questions:
 
 ---
 
+# Interactive Tableau Dashboard
+
+[![Customer Retention and Revenue Assurance Dashboard](dashboard/dashboard_preview.png)](https://public.tableau.com/app/profile/rayan.braccio/viz/CustomerRetentionRevenueAssuranceDashboard/ExecutiveDashboard)
+
+The interactive Tableau dashboard consolidates the principal retention, revenue-exposure and customer-risk metrics used throughout the case study.
+
+[View the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/rayan.braccio/viz/CustomerRetentionRevenueAssuranceDashboard/ExecutiveDashboard)
+
+---
+
 # Project Workflow
 
 Raw Dataset
@@ -139,6 +149,9 @@ customer-retention-revenue-assurance-audit/
 ├── README.md
 ├── Case_Study_01_Customer_Churn_Analysis.pdf
 ├── MANIFEST.json
+├── dashboard/
+│   ├── README.md
+│   └── dashboard_preview.png
 ├── data/
 │   ├── raw/
 │   │   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
@@ -169,6 +182,8 @@ customer-retention-revenue-assurance-audit/
 - [Dataset build script](scripts/build_clean_dataset.py)
 - [Verified SQL analysis package](sql/README.md)
 - [Dataset manifest](MANIFEST.json)
+- [Interactive Tableau dashboard](https://public.tableau.com/app/profile/rayan.braccio/viz/CustomerRetentionRevenueAssuranceDashboard/ExecutiveDashboard)
+- [Dashboard documentation](dashboard/README.md)
 
 # Reproducibility
 
